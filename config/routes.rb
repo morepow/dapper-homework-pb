@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   end
 
   add_openapi_route 'POST', '/api/v1/login', controller_name: 'login', action_name: 'create'
+  add_openapi_route 'POST', '/api/v1/signup', controller_name: 'signup', action_name: 'create'
   add_openapi_route 'GET', '/api/v1/users', controller_name: 'users', action_name: 'index'
   add_openapi_route 'PUT', '/api/v1/users{id}', controller_name: 'users', action_name: 'update_user'
 end

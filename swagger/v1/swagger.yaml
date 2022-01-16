@@ -12,6 +12,24 @@ tags:
   - name: users
     description: Users API
 paths:
+  /signup:
+    post:
+      tags:
+        - signup
+      summary: Create a new user
+      description: 'Create a user'
+      operationId: 'createUser'
+      responses:
+        '200':
+        description: success
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Token'
+        '400':
+          description: Invalid user
+      requestBody:
+        $ref: '#/components/requestBodies/User'
   /login:
     post:
       tags:
@@ -28,6 +46,8 @@ paths:
                 $ref: '#/components/schemas/Token'
         '401':
           description: Unauthorized
+      requestBody:
+        $ref: '#/components/requestBodies/Login'
   /users:
     get:
       tags:
@@ -112,6 +132,8 @@ components:
         firstName:
           type: string
         lastName:
+          type: string
+        password:
           type: string
     Login:
       title: Login Payload
