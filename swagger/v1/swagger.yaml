@@ -1,0 +1,132 @@
+openapi: 3.0.1
+servers:
+  - url: 'http://localhost:3000/api/v1'
+info:
+  description: Dapper Labs Homework Assignment
+  version: 1.0.0
+  title: Peter Bardon
+  license:
+    name: Apache-2.0
+    url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: users
+    description: Users API
+paths:
+  /login:
+    post:
+      tags:
+        - login
+      summary: Login a user
+      description: 'Login a user'
+      operationId: 'createSession'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Token'
+        '401':
+          description: Unauthorized
+  /users:
+    get:
+      tags:
+        - users
+      summary: Get a list of all users
+      description: 'Get a list of all users'
+      operationId: getUsers
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserList'
+        '405':
+          description: Invalid input
+  /users{id}:
+    put:
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+            minItems: 1
+      tags:
+        - users
+      summary: Update an existing user
+      description: ''
+      operationId: updateUser
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: User not found
+        '405':
+          description: Validation exception
+      requestBody:
+        $ref: '#/components/requestBodies/User'
+components:
+  requestBodies:
+    User:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/User'
+      description: User object that needs to be added to the database
+      required: true
+    Login:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Login'
+      description: Login payload
+      required: true
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
+  schemas:
+    UserList:
+      title: UserList
+      type: array
+      items:
+        $ref: '#/components/schemas/User'
+    User:
+      title: User
+      description: Information about current user
+      type: object
+      properties:
+        email:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+    Login:
+      title: Login Payload
+      description: Credentials needed for login
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+    Token:
+      title: Token body payload
+      description: Token response
+      type: object
+      properties:
+        token:
+          type: string
+
