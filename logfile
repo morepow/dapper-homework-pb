@@ -1,0 +1,6 @@
+2022-01-15 17:03:13.235 PST [90709] FATAL:  database files are incompatible with server
+2022-01-15 17:03:13.235 PST [90709] DETAIL:  The data directory was initialized by PostgreSQL version 13, which is not compatible with this version 14.1.
+2022-01-15 17:04:29.213 PST [91575] FATAL:  database files are incompatible with server
+2022-01-15 17:04:29.213 PST [91575] DETAIL:  The data directory was initialized by PostgreSQL version 13, which is not compatible with this version 14.1.
+2022-01-15 17:05:11.653 PST [91648] FATAL:  database files are incompatible with server
+2022-01-15 17:05:11.653 PST [91648] DETAIL:  The data directory was initialized by PostgreSQL version 13, which is not compatible with this version 14.1.
