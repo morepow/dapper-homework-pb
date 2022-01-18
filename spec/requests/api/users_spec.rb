@@ -1,6 +1,6 @@
 require 'swagger_helper'
 
-RSpec.describe 'Users API', type: :request do
+RSpec.describe 'Users API Controller Test', type: :request do
   path '/api/v1/users' do
     get 'Lists all users' do
       tags 'Users'

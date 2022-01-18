@@ -1,6 +1,6 @@
 require 'swagger_helper'
 
-RSpec.describe '/login', type: :request do
+RSpec.describe 'Login API Controller Tests', type: :request do
   path '/api/v1/login' do
     post 'Creates a session' do
       tags 'Login'
