@@ -26,7 +26,7 @@ RSpec.describe 'Users API Controller Test', type: :request do
             },
             required: ['firstName', 'lastName']
 
-          let(:id) { User.create(firstName: 'foo', lastName: 'bar').id }
+          let(:id) { User.create(first_name: 'foo', last_name: 'bar').id }
           run_test! do |response|
             data = JSON.parse(response.body)
             expect(data['firstName']).to eq('foo')
