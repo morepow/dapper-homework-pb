@@ -11,12 +11,25 @@ class UsersController < ApplicationController
 
   def index
     # Your code here
-
-    render json: {"message" => "yes, it worked"}
+    return unless Token.valid_token?(request.headers['x-authentication-token'])
+    
+    render json: { users: User.all.map{ |user| { email: user.email, firstName: user.first_name, lastName: user.lastName } } }
   end
 
   def update_user
     # Your code here
-    render json: { firstName: 'foo', lastName: 'bar' }
+    return unless Token.valid_token?(request.headers['x-authentication-token'])
+
+    user = Token.find_by_token(request.headers['x-authentication-token']).user
+
+    return unless user.valid_user_token?(request.headers['x-authentication-token'])
+
+    user.update({ first_name: user_params[:firstName], last_name: user_params[:lastName] })
+
+    render json: { firstName: user.first_name, lastName: user.last_name }
+  end
+
+  def user_params
+    params.permit(:firstName, :lastName)
   end
 end
