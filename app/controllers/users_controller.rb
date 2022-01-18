@@ -17,7 +17,6 @@ class UsersController < ApplicationController
 
   def update_user
     # Your code here
-
-    render json: {"message" => "yes, it worked"}
+    render json: { firstName: 'foo', lastName: 'bar' }
   end
 end

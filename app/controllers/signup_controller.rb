@@ -11,7 +11,11 @@ class SignupController < ApplicationController
 
   def create
     # Your code here
-
+    if params[:email].nil? || params[:password].nil?
+      render json: { error: 'missing credentials'}, status: :bad_request
+      return
+    end
+    
     render json: {"message" => "yes, it worked"}
   end
 end

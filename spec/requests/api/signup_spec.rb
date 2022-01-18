@@ -1,7 +1,7 @@
 require 'swagger_helper'
 
 RSpec.describe 'Signup API Controller Test', type: :request do
-  path '/signup' do
+  path '/api/v1/signup' do
     post 'Creates a user' do
       tags 'Signup'
       consumes 'application/json'
@@ -14,12 +14,16 @@ RSpec.describe 'Signup API Controller Test', type: :request do
         required: ['email', 'firstName', 'lastName']
       }
 
-      response '201', 'user updated' do
+      response '200', 'user updated' do
         let(:user) { { email: 'test@test.io', password: 'mockpassword' } }
-        run_test!
+        run_test! do |response|
+          data = JSON.parse(response.body)
+          expect(data['message']).to be_present
+          expect(data['message']).to eq('yes, it worked')
+        end
       end
 
-      response '422', 'invalid request' do
+      response '400', 'invalid request' do
         let(:user) { { email: 'test@test.io' } }
         run_test!
       end

@@ -813,3 +813,1851 @@ bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
 /Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
 /Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (25.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/login" for 127.0.0.1 at 2022-01-18 11:02:57 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:21:in `post'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (18.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started POST "/login" for 127.0.0.1 at 2022-01-18 11:02:57 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:21:in `post'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/signup" for 127.0.0.1 at 2022-01-18 11:02:57 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/signup"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:21:in `post'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/signup" for 127.0.0.1 at 2022-01-18 11:02:57 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/signup"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:21:in `post'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2022-01-18 11:02:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:15:in `get'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:03:42 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:05:36 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:05:53 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:06:06 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:06:15 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (8.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (22.8ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:07:10 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 62ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (43.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:08:23 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started PUT "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:08:23 -0700
+  
+ActionController::RoutingError (No route matches [PUT] "/api/v1/users"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:33:in `put'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:09:40 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:12:14 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:13:16 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:13:40 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4)[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:13:40.738234"], ["updated_at", "2022-01-18 18:13:40.738234"]]
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:13:40 -0700
+  
+ActionController::RoutingError (No route matches [PUT] "/api/v1/users"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:33:in `put'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4)[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:14:40.698359"], ["updated_at", "2022-01-18 18:14:40.698359"]]
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4)[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:14:44.184977"], ["updated_at", "2022-01-18 18:14:44.184977"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4)[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:14:47.490029"], ["updated_at", "2022-01-18 18:14:47.490029"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:15:29 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4)[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:15:29.862406"], ["updated_at", "2022-01-18 18:15:29.862406"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:15:29 -0700
+  
+ActionController::RoutingError (No route matches [PUT] "/api/v1/users"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:33:in `put'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4)[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:15:41.863376"], ["updated_at", "2022-01-18 18:15:41.863376"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4)[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:15:43.937046"], ["updated_at", "2022-01-18 18:15:43.937046"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4)[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:15:46.807495"], ["updated_at", "2022-01-18 18:15:46.807495"]]
+  [1m[35m (9.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:15:54 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4)[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:15:55.010330"], ["updated_at", "2022-01-18 18:15:55.010330"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:15:55 -0700
+  
+ActionController::RoutingError (No route matches [PUT] "/api/v1/users"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:33:in `put'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(509969408965603545);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddIdToUsers (20220118181639)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (35.9ms)[0m  [1m[35mALTER TABLE "users" ADD "id" serial primary key[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220118181639"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(509969408965603545)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:18:01 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:18:01.392093"], ["updated_at", "2022-01-18 18:18:01.392093"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:18:01 -0700
+  
+ActionController::RoutingError (No route matches [PUT] "/api/v1/users"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:33:in `put'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:19:22 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:19:22.119759"], ["updated_at", "2022-01-18 18:19:22.119759"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:19:37 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:19:37.368423"], ["updated_at", "2022-01-18 18:19:37.368423"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/9" for 127.0.0.1 at 2022-01-18 11:19:37 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"9"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:20:11 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:20:11.859458"], ["updated_at", "2022-01-18 18:20:11.859458"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/10" for 127.0.0.1 at 2022-01-18 11:20:11 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"10"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:20:31 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:20:31.336915"], ["updated_at", "2022-01-18 18:20:31.336915"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/11" for 127.0.0.1 at 2022-01-18 11:20:31 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"11"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:20:57 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:20:57.095420"], ["updated_at", "2022-01-18 18:20:57.095420"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/12" for 127.0.0.1 at 2022-01-18 11:20:57 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:21:23 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:21:23.200923"], ["updated_at", "2022-01-18 18:21:23.200923"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/13" for 127.0.0.1 at 2022-01-18 11:21:23 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"13"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:21:44 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:21:44.299563"], ["updated_at", "2022-01-18 18:21:44.299563"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/14" for 127.0.0.1 at 2022-01-18 11:21:44 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"14"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:22:07 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:22:07.594200"], ["updated_at", "2022-01-18 18:22:07.594200"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/15" for 127.0.0.1 at 2022-01-18 11:22:07 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"15"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:22:27 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:22:27.590223"], ["updated_at", "2022-01-18 18:22:27.590223"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/16" for 127.0.0.1 at 2022-01-18 11:22:27 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"16"}
+Completed 500 Internal Server Error in 35721ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/users_controller.rb:21:in `update_user'
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:23:17 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:23:17.899742"], ["updated_at", "2022-01-18 18:23:17.899742"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/17" for 127.0.0.1 at 2022-01-18 11:23:17 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"17"}
+Completed 200 OK in 1935ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:23:50 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:23:50.429753"], ["updated_at", "2022-01-18 18:23:50.429753"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/18" for 127.0.0.1 at 2022-01-18 11:23:50 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"18"}
+Completed 200 OK in 1804ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:24:08 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:24:08.143597"], ["updated_at", "2022-01-18 18:24:08.143597"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/19" for 127.0.0.1 at 2022-01-18 11:24:08 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"19"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (5.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started POST "/login" for 127.0.0.1 at 2022-01-18 11:41:33 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:21:in `post'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/login" for 127.0.0.1 at 2022-01-18 11:41:33 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+rack-test (0.6.3) lib/rack/test.rb:124:in `request'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:334:in `process'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:361:in `process_with_kwargs'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:21:in `post'
+actionpack (5.0.7.2) lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'
+rswag-specs (2.4.0) lib/rswag/specs/example_helpers.rb:20:in `submit_request'
+rswag-specs (2.4.0) lib/rswag/specs/example_group_helpers.rb:94:in `block in run_test!'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:365:in `run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:529:in `block in run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:528:in `run_owned_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:615:in `block in run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `reverse_each'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:614:in `run_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:484:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:502:in `run_before_example'
+rspec-core (3.10.1) lib/rspec/core/example.rb:261:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `block in with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `block in with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-rails (4.1.2) lib/rspec/rails/adapters.rb:75:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/example.rb:455:in `instance_exec'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:390:in `execute_with'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/example.rb:350:in `call'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+rspec-core (3.10.1) lib/rspec/core/hooks.rb:486:in `run'
+rspec-core (3.10.1) lib/rspec/core/example.rb:465:in `with_around_example_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:508:in `with_around_and_singleton_context_hooks'
+rspec-core (3.10.1) lib/rspec/core/example.rb:259:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:644:in `block in run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:640:in `run_examples'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:606:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `block in run'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `map'
+rspec-core (3.10.1) lib/rspec/core/example_group.rb:607:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `map'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+rspec-core (3.10.1) lib/rspec/core/configuration.rb:2067:in `with_suite_hooks'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:116:in `block in run_specs'
+rspec-core (3.10.1) lib/rspec/core/reporter.rb:74:in `report'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:115:in `run_specs'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:89:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:71:in `run'
+rspec-core (3.10.1) lib/rspec/core/runner.rb:45:in `invoke'
+rspec-core (3.10.1) exe/rspec:4:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/rspec:23:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'
+bundler (2.1.4) libexec/bundle:46:in `block in <top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'
+bundler (2.1.4) libexec/bundle:34:in `<top (required)>'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `load'
+/Users/pbardon/.rbenv/versions/2.7.5/bin/bundle:23:in `<main>'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:41:33 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:41:33.058009"], ["updated_at", "2022-01-18 18:41:33.058009"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/20" for 127.0.0.1 at 2022-01-18 11:41:33 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"20"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:42:43 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:42:44 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"test@test.io"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:42:44 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (13.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:42:44.052615"], ["updated_at", "2022-01-18 18:42:44.052615"]]
+  [1m[35m (1.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/21" for 127.0.0.1 at 2022-01-18 11:42:44 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"21"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:43:13 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:43:13 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:43:13.719007"], ["updated_at", "2022-01-18 18:43:13.719007"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/22" for 127.0.0.1 at 2022-01-18 11:43:13 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"22"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:44:07 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:44:07 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"foo@test.io"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:44:07 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:44:07.274745"], ["updated_at", "2022-01-18 18:44:07.274745"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/23" for 127.0.0.1 at 2022-01-18 11:44:07 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"23"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:44:28 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:44:28 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"foo@test.io"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:44:28 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:44:28.442110"], ["updated_at", "2022-01-18 18:44:28.442110"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/24" for 127.0.0.1 at 2022-01-18 11:44:28 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"24"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:46:41 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:46:41 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"foo@test.io"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+  
+ActionView::MissingTemplate (Missing template login/nothing, application/nothing with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/pbardon/workspace/dapper-homework/app/views"
+):
+  
+app/controllers/login_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:46:41 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:46:41.897915"], ["updated_at", "2022-01-18 18:46:41.897915"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/25" for 127.0.0.1 at 2022-01-18 11:46:41 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"25"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:47:26 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:47:26 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"foo@test.io"}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:47:26 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:47:26.942044"], ["updated_at", "2022-01-18 18:47:26.942044"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/26" for 127.0.0.1 at 2022-01-18 11:47:26 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"26"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:53:44 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:53:44 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"foo@test.io"}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/signup" for 127.0.0.1 at 2022-01-18 11:53:44 -0700
+Processing by SignupController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/signup" for 127.0.0.1 at 2022-01-18 11:53:44 -0700
+Processing by SignupController#create as HTML
+  Parameters: {"email"=>"test@test.io"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:53:44 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:53:44.758338"], ["updated_at", "2022-01-18 18:53:44.758338"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/27" for 127.0.0.1 at 2022-01-18 11:53:44 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"27"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:54:08 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:54:08 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"foo@test.io"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/signup" for 127.0.0.1 at 2022-01-18 11:54:08 -0700
+Processing by SignupController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (2.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/signup" for 127.0.0.1 at 2022-01-18 11:54:08 -0700
+Processing by SignupController#create as HTML
+  Parameters: {"email"=>"test@test.io"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:54:08 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:54:08.127562"], ["updated_at", "2022-01-18 18:54:08.127562"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/28" for 127.0.0.1 at 2022-01-18 11:54:08 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"28"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:54:43 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:54:43 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"foo@test.io"}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/signup" for 127.0.0.1 at 2022-01-18 11:54:43 -0700
+Processing by SignupController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/signup" for 127.0.0.1 at 2022-01-18 11:54:43 -0700
+Processing by SignupController#create as HTML
+  Parameters: {"email"=>"test@test.io"}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:54:44 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:54:44.018374"], ["updated_at", "2022-01-18 18:54:44.018374"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/29" for 127.0.0.1 at 2022-01-18 11:54:44 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"29"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:55:19 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2022-01-18 11:55:19 -0700
+Processing by LoginController#create as HTML
+  Parameters: {"email"=>"foo@test.io"}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/signup" for 127.0.0.1 at 2022-01-18 11:55:19 -0700
+Processing by SignupController#create as HTML
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/signup" for 127.0.0.1 at 2022-01-18 11:55:19 -0700
+Processing by SignupController#create as HTML
+  Parameters: {"email"=>"test@test.io"}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-01-18 11:55:19 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-18 18:55:19.468977"], ["updated_at", "2022-01-18 18:55:19.468977"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/api/v1/users/30" for 127.0.0.1 at 2022-01-18 11:55:19 -0700
+Processing by UsersController#update_user as JSON
+  Parameters: {"id"=>"30"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m

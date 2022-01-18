@@ -1,7 +1,7 @@
 require 'swagger_helper'
 
-RSpec.describe 'api/login', type: :request do
-  path '/login' do
+RSpec.describe '/login', type: :request do
+  path '/api/v1/login' do
     post 'Creates a session' do
       tags 'Login'
       consumes 'application/json'
@@ -14,13 +14,17 @@ RSpec.describe 'api/login', type: :request do
         required: ['email', 'password']
       }
 
-      response '201', 'user updated' do
+      response '200', 'user logged in' do
         let(:user) { { email: 'test@test.io', password: 'mockpassword' } }
-        run_test!
+        run_test! do |response|
+          data = JSON.parse(response.body)
+          expect(data['message']).to be_present
+          expect(data['message']).to eq('yes, it worked')
+        end
       end
 
-      response '422', 'invalid request' do
-        let(:user) { { email: 'test@test.io' } }
+      response '400', 'invalid request' do
+        let(:user) { { email: 'foo@test.io' } }
         run_test!
       end
     end
