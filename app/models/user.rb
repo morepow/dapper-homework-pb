@@ -20,24 +20,24 @@ class User < ApplicationRecord
 
   def self.authenticate(params)
     user = User.find_by(email: params[:email])
-    if user && user.authenticate(params[:password])
-      Token.create_token(user.id)
-    end
+    return false unless user&.authenticate(params[:password])
+
+    Token.create_token(user.id)
   end
 
   def self.create_with_password(params)
-    user_id = User.create({ 
-      email: params[:email],
-      first_name: params[:firstName],
-      last_name: params[:lastName],
-      password: params[:password]
-    }).id
+    user_id = User.create({
+                            email: params[:email],
+                            first_name: params[:firstName],
+                            last_name: params[:lastName],
+                            password: params[:password]
+                          }).id
     Token.create_token(user_id)
   end
 
   def valid_user_token?(token)
     token = Token.find_by(token: token)
     decoded = JWT.decode(token.token, ENV['JWT_SECRET'], true, algorithm: 'HS256')
-    decoded[0]['user_id'] == self.id
+    decoded[0]['user_id'] == id
   end
 end

@@ -12,8 +12,6 @@ class InitTables < ActiveRecord::Migration
   def change
     create_table "login".pluralize.to_sym, id: false do |t|
       t.string :email
-      t.string :password
-
       t.timestamps
     end
 

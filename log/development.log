@@ -417,3 +417,142 @@ Processing by UsersController#index as JSON
 Completed 200 OK in 7500ms (Views: 0.3ms | ActiveRecord: 4.3ms)
 
 
+DEPRECATION WARNING: The `cache_control` argument is deprecated,replaced by `headers: { 'Cache-Control' => {:index=>"index", :headers=>{}} }`,  and will be removed in Rails 5.1. (called from <top (required)> at /Users/pbardon/workspace/dapper-homework/config/environment.rb:5)
+DEPRECATION WARNING: The `cache_control` argument is deprecated,replaced by `headers: { 'Cache-Control' => {:index=>"index", :headers=>{}} }`,  and will be removed in Rails 5.1. (called from <top (required)> at /Users/pbardon/workspace/dapper-homework/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (18.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (44.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "dapper-homework-dev"[0m
+  [1m[35m (59.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "dapper-homework-test"[0m
+  [1m[35m (233.7ms)[0m  [1m[35mCREATE DATABASE "dapper-homework-dev" ENCODING = 'unicode'[0m
+  [1m[35m (81.1ms)[0m  [1m[35mCREATE DATABASE "dapper-homework-test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "logins" ("email" character varying, "password" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "tokens" ("token" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (18.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying, "first_name" character varying, "last_name" character varying, "created_at" timestamp, "updated_at" timestamp, "password_digest" character varying)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20220118230311)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20220118181639),
+(0);
+
+[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-01-19 17:35:18.600184"], ["updated_at", "2022-01-19 17:35:18.600184"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "logins" ("email" character varying, "password" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "tokens" ("token" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (33.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying, "first_name" character varying, "last_name" character varying, "created_at" timestamp, "updated_at" timestamp, "password_digest" character varying)[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20220118230311)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20220118181639),
+(0);
+
+[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-01-19 17:35:18.772683"], ["updated_at", "2022-01-19 17:35:18.772683"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2022-01-19 17:35:18.780628"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (48.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "dapper-homework-dev"[0m
+  [1m[35m (39.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "dapper-homework-test"[0m
+  [1m[35m (23.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (25.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4060398569113142865);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to InitTables (0)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class InitTables < ActiveRecord::Migration[4.2] (called from load at /Users/pbardon/.rbenv/versions/2.7.5/bin/rake:23)
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "logins" ("email" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "tokens" ("token" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "users" ("email" character varying, "first_name" character varying, "last_name" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "0"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddIdToUsers (20220118181639)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (31.1ms)[0m  [1m[35mALTER TABLE "users" ADD "id" serial primary key[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220118181639"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPasswordDigestToUser (20220118230311)
+  [1m[35m (12.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" character varying[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220118230311"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-01-19 17:37:52.807175"], ["updated_at", "2022-01-19 17:37:52.807175"]]
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4060398569113142865)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/api-docs" for ::1 at 2022-01-19 10:38:53 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-01-19 10:38:53 -0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-01-19 10:38:53 -0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-01-19 10:38:53 -0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-01-19 10:38:53 -0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-01-19 10:38:54 -0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-01-19 10:38:55 -0700
+Started POST "/api/v1/signup" for ::1 at 2022-01-19 10:39:26 -0700
+Processing by SignupController#create as JSON
+  Parameters: {"email"=>"test@test.io", "firstName"=>"Foo", "lastName"=>"Bar", "password"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (7.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.io"], ["LIMIT", 1]]
+  [1m[35mSQL (19.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "test@test.io"], ["first_name", "Foo"], ["last_name", "Bar"], ["created_at", "2022-01-19 17:39:27.137553"], ["updated_at", "2022-01-19 17:39:27.137553"], ["password_digest", "$2a$12$Lr7skHzDc6e.bFsH8b53VOtQA.EioaU7UBCW7Vu0f6h4IpbKP6ah2"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (12.8ms)[0m  [1m[32mINSERT INTO "tokens" ("token", "created_at", "updated_at") VALUES ($1, $2, $3)[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.IaETquk7UreJV9wtSDMTeGQug4VxdYaSIgtdFyk5HRk"], ["created_at", "2022-01-19 17:39:27.176402"], ["updated_at", "2022-01-19 17:39:27.176402"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 375ms (Views: 0.3ms | ActiveRecord: 58.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2022-01-19 10:39:58 -0700
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (5.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 10ms (Views: 0.5ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2022-01-19 10:41:03 -0700
+Processing by LoginController#create as JSON
+  Parameters: {"email"=>"test@test.io", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.io"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tokens" ("token", "created_at", "updated_at") VALUES ($1, $2, $3)[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.IaETquk7UreJV9wtSDMTeGQug4VxdYaSIgtdFyk5HRk"], ["created_at", "2022-01-19 17:41:03.579162"], ["updated_at", "2022-01-19 17:41:03.579162"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "logins" ("email", "created_at", "updated_at") VALUES ($1, $2, $3)[0m  [["email", "test@test.io"], ["created_at", "2022-01-19 17:41:03.686591"], ["updated_at", "2022-01-19 17:41:03.686591"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 454ms (Views: 0.6ms | ActiveRecord: 53.1ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2022-01-19 10:41:23 -0700
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" = $1 LIMIT $2[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.IaETquk7UreJV9wtSDMTeGQug4VxdYaSIgtdFyk5HRk"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+

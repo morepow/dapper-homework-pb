@@ -5,12 +5,12 @@ RSpec.describe 'Users API Controller Test', type: :request do
     user = User.create(email: 'test@test.io', first_name: 'foo', last_name: 'bar', password_digest: 'foo')
     user_id = User.find_by_email('test@test.io').id
     let(:id) { user_id }
-    let(:'x-authentication-token') { Token.create_token(user_id) }
+    let(Token.token_header_name.to_sym) { Token.create_token(user_id) }
     get 'Lists all users' do
       tags 'Users'
       produces 'application/json'
 
-      parameter name: 'x-authentication-token', in: :header, type: :string
+      parameter name: Token.token_header_name, in: :header, type: :string
       tags 'Users'
       response '200', 'user list' do
         run_test! do |response|
@@ -28,14 +28,14 @@ RSpec.describe 'Users API Controller Test', type: :request do
       user = User.create(email: 'test@test.io', first_name: 'foo', last_name: 'bar', password_digest: 'foo')
       user_id = User.find_by_email('test@test.io').id
       let(:id) { user_id }
-      let(:'x-authentication-token') { Token.create_token(user_id) }
+      let(Token.token_header_name.to_sym) { Token.create_token(user_id) }
 
       put 'Update a user' do
         tags 'Users'
         produces 'application/json'
         consumes 'application/json'
         parameter name: :id, in: :path, type: :string
-        parameter name: 'x-authentication-token', in: :header, type: :string
+        parameter name: Token.token_header_name, in: :header, type: :string
 
         parameter name: :user, in: :body, schema: {
           type: :object,

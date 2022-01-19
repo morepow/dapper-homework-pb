@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 20220118230311) do
 
   create_table "logins", id: false, force: :cascade do |t|
     t.string   "email"
-    t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
