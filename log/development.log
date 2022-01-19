@@ -250,3 +250,170 @@ Migrating to AddPasswordDigestToUser (20220118230311)
   [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4060398569113142865)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-01-18 20:47:10 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (26.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-01-18 20:47:11 -0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-01-18 20:47:11 -0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-01-18 20:47:11 -0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-01-18 20:47:12 -0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-01-18 20:47:13 -0700
+Started GET "/api/v1/users" for ::1 at 2022-01-18 20:47:24 -0700
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (0.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 20ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2022-01-18 20:47:44 -0700
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (2.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 8ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2022-01-18 20:48:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (0.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 2.5ms)
+
+
+  
+NoMethodError (undefined method `jsos' for #<UsersController:0x00007fe22589cf38>
+Did you mean?  JSON):
+  
+app/controllers/users_controller.rb:13:in `index'
+Started GET "/api/v1/users" for ::1 at 2022-01-18 20:48:54 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (Views: 0.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2022-01-18 20:49:21 -0700
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2022-01-18 20:52:12 -0700
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 12ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2022-01-18 20:52:18 -0700
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 2ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/signup" for ::1 at 2022-01-18 20:52:46 -0700
+Processing by SignupController#create as */*
+  Parameters: {"email"=>"tester@test.io", "firstName"=>"Foo", "lastName"=>"Bar", "password"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (19.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tester@test.io"], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "tester@test.io"], ["first_name", "Foo"], ["last_name", "Bar"], ["created_at", "2022-01-19 03:52:46.494429"], ["updated_at", "2022-01-19 03:52:46.494429"], ["password_digest", "$2a$12$jj4DNXh/synXX8XAFXr55eSNX8/AHrbnabI6kjRt7Hy3xd5jCLzWy"]]
+  [1m[35m (13.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tokens" ("token", "created_at", "updated_at") VALUES ($1, $2, $3)[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.IaETquk7UreJV9wtSDMTeGQug4VxdYaSIgtdFyk5HRk"], ["created_at", "2022-01-19 03:52:46.528198"], ["updated_at", "2022-01-19 03:52:46.528198"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 402ms (Views: 0.2ms | ActiveRecord: 69.5ms)
+
+
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-01-18 20:52:52 -0700
+Started GET "/api-docs/swagger-ui-bundle.js.map" for ::1 at 2022-01-18 20:52:53 -0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js.map" for ::1 at 2022-01-18 20:52:53 -0700
+Started GET "/api-docs/swagger-ui.css.map" for ::1 at 2022-01-18 20:52:53 -0700
+Started POST "/api/v1/signup" for ::1 at 2022-01-18 20:53:59 -0700
+Processing by SignupController#create as */*
+  Parameters: {"email"=>"tester@test.io", "firstName"=>"Foo", "lastName"=>"Bar", "password"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tester@test.io"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (11.7ms)[0m  [1m[32mINSERT INTO "tokens" ("token", "created_at", "updated_at") VALUES ($1, $2, $3)[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjpudWxsfQ.rT-L0meyqay1D1PkUKold4prXLIo-6iF9eDTBkpLc14"], ["created_at", "2022-01-19 03:53:59.555373"], ["updated_at", "2022-01-19 03:53:59.555373"]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 109223ms (Views: 0.4ms | ActiveRecord: 89.5ms)
+
+
+Started POST "/api/v1/signup" for ::1 at 2022-01-18 20:56:10 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SignupController#create as */*
+  Parameters: {"email"=>"tester@test.io", "firstName"=>"Foo", "lastName"=>"Bar", "password"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tester@test.io"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tokens" ("token", "created_at", "updated_at") VALUES ($1, $2, $3)[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjpudWxsfQ.rT-L0meyqay1D1PkUKold4prXLIo-6iF9eDTBkpLc14"], ["created_at", "2022-01-19 03:56:11.294476"], ["updated_at", "2022-01-19 03:56:11.294476"]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10233ms (Views: 0.2ms | ActiveRecord: 13.9ms)
+
+
+Started POST "/api/v1/signup" for ::1 at 2022-01-18 20:56:30 -0700
+Processing by SignupController#create as */*
+  Parameters: {"email"=>"tester2@test.io", "firstName"=>"Foo", "lastName"=>"Bar", "password"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tester2@test.io"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "tester2@test.io"], ["first_name", "Foo"], ["last_name", "Bar"], ["created_at", "2022-01-19 03:56:31.283972"], ["updated_at", "2022-01-19 03:56:31.283972"], ["password_digest", "$2a$12$NbbAJ4.Ro0xvodwlwNs6SOjW6Nav9HjKGpv9ma8pOR1ISw5jwsJKy"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tokens" ("token", "created_at", "updated_at") VALUES ($1, $2, $3)[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.fvo6AO1xjIKoHC8Z3N--lGOHwykWaTJRuCF403ouGEQ"], ["created_at", "2022-01-19 03:56:31.287388"], ["updated_at", "2022-01-19 03:56:31.287388"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4074ms (Views: 0.3ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2022-01-18 20:56:42 -0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-01-18 20:56:42 -0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-01-18 20:56:42 -0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-01-18 20:56:42 -0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-01-18 20:56:43 -0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-01-18 20:56:43 -0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-01-18 20:56:44 -0700
+Started GET "/api-docs/index.html" for ::1 at 2022-01-18 20:56:54 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-01-18 20:56:54 -0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-01-18 20:56:54 -0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-01-18 20:56:54 -0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-01-18 20:56:54 -0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-01-18 20:56:55 -0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-01-18 20:56:55 -0700
+Started POST "/api/v1/signup" for ::1 at 2022-01-18 20:57:14 -0700
+Processing by SignupController#create as JSON
+  Parameters: {"email"=>"test123@test.io", "firstName"=>"foo", "lastName"=>"bar", "password"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test123@test.io"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "test123@test.io"], ["first_name", "foo"], ["last_name", "bar"], ["created_at", "2022-01-19 03:57:15.127274"], ["updated_at", "2022-01-19 03:57:15.127274"], ["password_digest", "$2a$12$Pbg.XAjewykEJD21TYd86eJSK/7FHg0oaKMFHNP8ky3sddpfLPbki"]]
+  [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "tokens" ("token", "created_at", "updated_at") VALUES ($1, $2, $3)[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozfQ.75qJamVJZifsxm5yygRxAp8gHBZZUf1GIo4OLqYqkEg"], ["created_at", "2022-01-19 03:57:15.178785"], ["updated_at", "2022-01-19 03:57:15.178785"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4096ms (Views: 0.3ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2022-01-18 20:57:39 -0700
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (1.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2022-01-18 20:58:03 -0700
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (0.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2022-01-18 20:58:22 -0700
+Processing by UsersController#index as JSON
+Started GET "/api/v1/users" for ::1 at 2022-01-18 20:59:32 -0700
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 70650ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Processing by UsersController#index as JSON
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" = $1 LIMIT $2[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozfQ.75qJamVJZifsxm5yygRxAp8gHBZZUf1GIo4OLqYqkEg"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."token" = $1 LIMIT $2[0m  [["token", "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozfQ.75qJamVJZifsxm5yygRxAp8gHBZZUf1GIo4OLqYqkEg"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7500ms (Views: 0.3ms | ActiveRecord: 4.3ms)
+
+

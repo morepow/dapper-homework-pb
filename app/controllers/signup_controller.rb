@@ -19,13 +19,14 @@ class SignupController < ApplicationController
       return
     end
 
-    user = User.create_with_password(signup_params)
-
-    unless user.save
-      render json: {error: 'failed to create user'}, status: :server_error
+    user_token = User.create_with_password(signup_params)
+    unless user_token
+      render json: { error: 'failed to create user' }, status: :server_error
     end
 
-    render json: { token: Token.create_token(user.id) }
+    byebug
+    
+    render json: { token: user_token }
   end
 
   def signup_params

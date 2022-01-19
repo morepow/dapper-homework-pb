@@ -15,12 +15,18 @@ RSpec.describe 'Login API Controller Tests', type: :request do
       }
 
       response '200', 'user logged in' do
-        let(:user) { { email: 'test@test.io', password: 'mockpassword' } }
+        User.create({email: 'testauth@test.io', password: 'mockpassword', first_name: 'Foo', last_name: 'Bar'})
+        let(:user) { { email: 'testauth@test.io', password: 'mockpassword' } }
         run_test! do |response|
           data = JSON.parse(response.body)
-          expect(data['message']).to be_present
-          expect(data['message']).to eq('yes, it worked')
+          expect(data['token']).to be_present
         end
+      end
+
+      response '401', 'invalid password' do
+        User.create({email: 'testauth@test.io', password: 'mockpassword', first_name: 'Foo', last_name: 'Bar'})
+        let(:user) { { email: 'testauth@test.io', password: 'badpassword' } }
+        run_test!
       end
 
       response '400', 'invalid request' do

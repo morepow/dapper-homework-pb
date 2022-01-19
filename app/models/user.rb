@@ -13,23 +13,26 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   validates :first_name, presence: true
   validates :last_name, presence: true
-  validates :password_digest, presence: true
 
   has_many :tokens, dependent: :destroy
 
+  has_secure_password
+
   def self.authenticate(params)
     user = User.find_by(email: params[:email])
-    digest = BCrypt::Password.new(user.password)
-    if user && user.password_digest == digest
+    if user && user.authenticate(params[:password])
       Token.create_token(user.id)
     end
   end
 
   def self.create_with_password(params)
-    params[:password_digest] = BCrypt::Password.create(params[:password])
-    User.create(params)
-    user.save
-    Token.create_token(user.id)
+    user_id = User.create({ 
+      email: params[:email],
+      first_name: params[:firstName],
+      last_name: params[:lastName],
+      password: params[:password]
+    }).id
+    Token.create_token(user_id)
   end
 
   def valid_user_token?(token)

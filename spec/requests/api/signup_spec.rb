@@ -9,17 +9,18 @@ RSpec.describe 'Signup API Controller Test', type: :request do
         type: :object,
         properties: {
           email: { type: :string },
-          password: { type: :string }
+          password: { type: :string },
+          firstName: { type: :string },
+          lastName: { type: :string }
         },
-        required: ['email', 'firstName', 'lastName']
+        required: ['email', 'password', 'firstName', 'lastName']
       }
 
       response '200', 'user updated' do
-        let(:user) { { email: 'test@test.io', password: 'mockpassword' } }
+        let(:user) { { email: 'test@test.io', password: 'mockpassword', firstName: 'Foo', lastName: 'Bar' } }
         run_test! do |response|
           data = JSON.parse(response.body)
-          expect(data['message']).to be_present
-          expect(data['message']).to eq('yes, it worked')
+          expect(data['token']).to be_present
         end
       end
 
