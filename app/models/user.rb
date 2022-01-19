@@ -26,18 +26,15 @@ class User < ApplicationRecord
   end
 
   def self.create_with_password(params)
-    user = User.new(params)
-    user.password_digest = BCrypt::Password.create(params[:password])
+    params[:password_digest] = BCrypt::Password.create(params[:password])
+    User.create(params)
     user.save
     Token.create_token(user.id)
   end
 
   def valid_user_token?(token)
     token = Token.find_by(token: token)
-    if token.user_id == self.id
-      true
-    else
-      false
-    end
+    decoded = JWT.decode(token.token, ENV['JWT_SECRET'], true, algorithm: 'HS256')
+    decoded[0]['user_id'] == self.id
   end
 end

@@ -17,5 +17,10 @@ class Token < ApplicationRecord
 
   def self.valid_token?(token)
     return false unless Token.find_by_token(token)
+    true
+  end
+
+  def decode
+    JWT.decode(token, ENV['JWT_SECRET'], true, algorithm: 'HS256')
   end
 end
